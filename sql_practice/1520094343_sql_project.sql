@@ -31,7 +31,7 @@ SELECT name,
 
 SELECT COUNT(name)
                         FROM facilities
-                    WHERE membercost > 0
+                    WHERE membercost = 0
 
 /* Q3: How can you produce a list of facilities that charge a fee to members,
 where the fee is less than 20% of the facility's monthly maintenance cost?
@@ -129,12 +129,14 @@ SELECT sub.*
 The output of facility name and total revenue, sorted by revenue. Remember
 that there's a different cost for guests and members! */
 
-SELECT f.name,
-       SUM(CASE WHEN b.memid = 0 THEN b.slots * f.guestcost
-                ELSE b.slots * f.membercost END) AS revenue
-    FROM facilities f
-    JOIN bookings b
-    ON b.facid = f.facid
-    GROUP By f.name
-    ORDER BY revenue
-    LIMIT 3
+SELECT sub.*
+                        FROM
+                            (SELECT f.name,
+                                SUM(CASE WHEN b.memid = 0 THEN b.slots * f.guestcost
+                                ELSE b.slots * f.membercost END) AS revenue
+                            FROM facilities f
+                            JOIN bookings b
+                            ON b.facid = f.facid
+                            GROUP By f.name
+                            ORDER BY revenue) sub
+                        WHERE revenue < 1000
