@@ -12647,7 +12647,121 @@ div.slide-background {
 </ul>
 </div>
 </div>
-</div></div></section></section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="In-Depth-Analysis">In Depth Analysis<a class="anchor-link" href="#In-Depth-Analysis">&#182;</a></h1>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Procedures">Procedures<a class="anchor-link" href="#Procedures">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul style="padding-left:40px">
+    <li>For a given regression prediction algorithm, do the following:</li>
+</ul>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol style="padding-left:80px" start = "1">
+    <li>Split data into 80% train set and 20% test set</li>
+</ol>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol style="padding-left:80px" start =  "2">
+    <li>Use default hyperparameter values to fit data (no cross-validation used)</li>
+</ol>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul style="padding-left:80px">
+    <li>Calculate RMSE</li>
+</ul>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul style="padding-left:80px">
+    <li>Generate Bootstrap Sampling Distribution of RMSE (1000 bootstrap samples)</li>
+</ul>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul style="padding-left:80px">
+    <li>Tune hyperparameter values using RandomizedSearchCV (1000 iterations) and 5-fold cross-valudation</li>
+</ul>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul style="padding-left:80px">
+    <li>Select model with lowest RMSE</li>
+</ul>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul style="padding-left:80px">
+    <li>Generate Bootstrap Sampling Distribution of RMSE (1000 bootstrap samples)</li>
+</ul>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/boxplot_bootstrap_dist.png" alt=""></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Predicted-vs-Actual-Opioid-Mortality-Rate">Predicted vs Actual Opioid Mortality Rate<a class="anchor-link" href="#Predicted-vs-Actual-Opioid-Mortality-Rate">&#182;</a></h1><p><img src="images/predicted_actual_regression.png" alt=""></p>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
