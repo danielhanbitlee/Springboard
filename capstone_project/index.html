@@ -11960,13 +11960,6 @@ div.slide-background {
     transition: none;
 }
 
-.custom_css_center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 </style><h1 id="Predicting-the-Mortality-Rate-Due-to-Opioid-Addiction-At-the-County-Level">Predicting the Mortality Rate Due to Opioid Addiction At the County Level<a class="anchor-link" href="#Predicting-the-Mortality-Rate-Due-to-Opioid-Addiction-At-the-County-Level">&#182;</a></h1><h3 id="Daniel-Lee">Daniel Lee<a class="anchor-link" href="#Daniel-Lee">&#182;</a></h3><h4 id="August-17,-2018">August 17, 2018<a class="anchor-link" href="#August-17,-2018">&#182;</a></h4>
 </div>
 </div>
@@ -12685,9 +12678,9 @@ div.slide-background {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol style="padding-left:80px" start = '1'>
+<ul style="padding-left:80px">
     <li>Split data into 80% train set and 20% test set</li>
-</ol>
+</ul>
 </div>
 </div>
 </div></div><div class="fragment">
@@ -12695,9 +12688,9 @@ div.slide-background {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol style="padding-left:80px" start = '2'>
+<ul style="padding-left:80px">
     <li>Use default hyperparameter values to fit data (no cross-validation used)</li>
-</ol>
+</ul>
 </div>
 </div>
 </div></div><div class="fragment">
@@ -12705,9 +12698,9 @@ div.slide-background {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol style="padding-left:80px" start = '3'>
+<ul style="padding-left:80px">
     <li>Calculate RMSE</li>
-</ol>
+</ul>
 </div>
 </div>
 </div></div><div class="fragment">
@@ -12715,9 +12708,9 @@ div.slide-background {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol style="padding-left:80px" start = '4'>
+<ul style="padding-left:80px">
     <li>Generate Bootstrap Sampling Distribution of RMSE (1000 bootstrap samples)</li>
-</ol>
+</ul>
 </div>
 </div>
 </div></div><div class="fragment">
@@ -12725,9 +12718,9 @@ div.slide-background {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol style="padding-left:80px" start = '5'>
+<ul style="padding-left:80px">
     <li>Tune hyperparameter values using RandomizedSearchCV (1000 iterations) and 5-fold cross-valudation</li>
-</ol>
+</ul>
 </div>
 </div>
 </div></div><div class="fragment">
@@ -12735,9 +12728,9 @@ div.slide-background {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol style="padding-left:80px" start = '6'>
+<ul style="padding-left:80px">
     <li>Select model with lowest RMSE</li>
-</ol>
+</ul>
 </div>
 </div>
 </div></div><div class="fragment">
@@ -12745,9 +12738,9 @@ div.slide-background {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol style="padding-left:80px" start = '7'>
+<ul style="padding-left:80px">
     <li>Generate Bootstrap Sampling Distribution of RMSE (1000 bootstrap samples)</li>
-</ol>
+</ul>
 </div>
 </div>
 </div></div></section></section><section><section>
