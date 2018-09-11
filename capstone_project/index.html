@@ -12836,7 +12836,7 @@ div.slide-background {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">population_distribution</span>
@@ -12852,7 +12852,7 @@ div.slide-background {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[63]:</div>
+<div class="prompt output_prompt">Out[79]:</div>
 
 
 
@@ -13026,6 +13026,124 @@ div.slide-background {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Bootstrap-RMSE-Distributions-for-All-Methods-(Population-&gt;=-18646)">Bootstrap RMSE Distributions for All Methods (Population &gt;= 18646)<a class="anchor-link" href="#Bootstrap-RMSE-Distributions-for-All-Methods-(Population-&gt;=-18646)">&#182;</a></h1><p><img src="images/pop_adj_bootstrap_hist_1.png" /></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Bootstrap-RMSE-Distributions-for-All-Methods-(Population-&gt;=-18646)">Bootstrap RMSE Distributions for All Methods (Population &gt;= 18646)<a class="anchor-link" href="#Bootstrap-RMSE-Distributions-for-All-Methods-(Population-&gt;=-18646)">&#182;</a></h1><p><img src="images/pop_adj_bootstrap_hist_2.png" /></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">two_sample_t_test_p_values</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[84]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Model 1</th>
+      <th>Model 2</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Stochastic Gradient Boosting (Tuned Hyperparam...</td>
+      <td>Random Forest Regression (Tuned Hyperparameters)</td>
+      <td>1.515526e-25</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Stochastic Gradient Boosting (Tuned Hyperparam...</td>
+      <td>Gradient Boosting Regression (Tuned Hyperparam...</td>
+      <td>8.911868e-37</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Stochastic Gradient Boosting (Tuned Hyperparam...</td>
+      <td>Stochastic Gradient Boosting (Default Hyperpar...</td>
+      <td>1.082024e-164</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Stochastic Gradient Boosting (Tuned Hyperparam...</td>
+      <td>Stochastic Gradient Boosting (Tuned Hyperparam...</td>
+      <td>1.264246e-192</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Stochastic Gradient Boosting (Tuned Hyperparam...</td>
+      <td>Stochastic Gradient Boosting (Default Hyperpar...</td>
+      <td>0.000000e+00</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Stochastic Gradient Boosting (Tuned Hyperparam...</td>
+      <td>Gradient Boosting Regression (Default Hyperpar...</td>
+      <td>0.000000e+00</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Stochastic Gradient Boosting (Tuned Hyperparam...</td>
+      <td>LASSO Regression (Tuned Hyperparameters)</td>
+      <td>0.000000e+00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Boxplot-of-Bootstrap-RMSE-Distributions-for-All-Methods-(Population-&gt;=-18646)">Boxplot of Bootstrap RMSE Distributions for All Methods (Population &gt;= 18646)<a class="anchor-link" href="#Boxplot-of-Bootstrap-RMSE-Distributions-for-All-Methods-(Population-&gt;=-18646)">&#182;</a></h3><p><img src="images/pop_adj_boxplot_bootstrap_dist.png" /></p>
 
 </div>
@@ -13045,6 +13163,15 @@ div.slide-background {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Predicted-vs-Actual-Opioid-Mortality-Rate-(Population-&gt;=-18646)">Predicted vs Actual Opioid Mortality Rate (Population &gt;= 18646)<a class="anchor-link" href="#Predicted-vs-Actual-Opioid-Mortality-Rate-(Population-&gt;=-18646)">&#182;</a></h3><p><img style="margin-top:-15px;" src="images/pop_adj_predicted_actual_regression.png" /></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Feature-Importances-(Population-&gt;=-18646)">Feature Importances (Population &gt;= 18646)<a class="anchor-link" href="#Feature-Importances-(Population-&gt;=-18646)">&#182;</a></h3><p><img style="margin-top:-15px;" src="images/pop_adj_feature_importances.png" /></p>
 
 </div>
 </div>
