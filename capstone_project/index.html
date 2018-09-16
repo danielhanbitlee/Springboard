@@ -11965,7 +11965,8 @@ img {
     height: auto;
 }
 
-</style><h1 id="Predicting-the-Mortality-Rate-Due-to-Opioid-Addiction-At-the-County-Level">Predicting the Mortality Rate Due to Opioid Addiction At the County Level<a class="anchor-link" href="#Predicting-the-Mortality-Rate-Due-to-Opioid-Addiction-At-the-County-Level">&#182;</a></h1><h3 id="Daniel-Lee">Daniel Lee<a class="anchor-link" href="#Daniel-Lee">&#182;</a></h3><h4 id="September-12,-2018">September 12, 2018<a class="anchor-link" href="#September-12,-2018">&#182;</a></h4>
+</style><h1 id="Predicting-the-Mortality-Rate-Due-to-Opioid-Addiction-At-the-County-Level">Predicting the Mortality Rate Due to Opioid Addiction At the County Level<a class="anchor-link" href="#Predicting-the-Mortality-Rate-Due-to-Opioid-Addiction-At-the-County-Level">&#182;</a></h1><h3 id="Daniel-Lee">Daniel Lee<a class="anchor-link" href="#Daniel-Lee">&#182;</a></h3><h4 id="September-12,-2018">September 12, 2018<a class="anchor-link" href="#September-12,-2018">&#182;</a></h4><p><a href="https://danielhanbitlee.github.io/opioid_mortality/">Click here for Blog</a></p>
+
 </div>
 </div>
 </div><aside class="notes">
@@ -12294,21 +12295,20 @@ img {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>US County Opioid Prescribing Rates 2016<ul>
-<li><a href="https://www.cdc.gov/drugoverdose/maps/rxcounty2016.html">https://www.cdc.gov/drugoverdose/maps/rxcounty2016.html</a></li>
-</ul>
-</li>
-<li>Unemployment, median household income, educational attainment, poverty rate, and population:<ul>
-<li><a href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/">https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/</a></li>
-</ul>
-</li>
-<li>Underlying Cause of Death<ul>
-<li><a href="https://wonder.cdc.gov/controller/saved/D77/D39F042">https://wonder.cdc.gov/controller/saved/D77/D39F042</a></li>
-</ul>
-</li>
-</ul>
-
+<div>
+    <ol>
+        <li><a href="https://www.cdc.gov/drugoverdose/maps/rxcounty2016.html">US County Opioid Prescription Rates 2016 (CDC)</a></li>
+        <li><a href="https://www.ers.usda.gov/webdocs/DataFiles/48747/Education.xls?v=43125">County Level Education Data 2016 (usda.gov)</a></li>
+        <li><a href="https://www.ers.usda.gov/webdocs/DataFiles/48747/PopulationEstimates.xls?v=43209">County Level Population Estimates Data 2016 (usda.gov)</a></li>
+        <li><a href="https://www.ers.usda.gov/webdocs/DataFiles/48747/PovertyEstimates.xls?v=43125">County Level Poverty Estimates Data 2016(usda.gov)</a></li>
+        <li><a href="https://www.ers.usda.gov/webdocs/DataFiles/48747/Unemployment.xls?v=43244">County Level Unemployment Rate Data 2016 (usda.gov)</a></li>
+        <li><a href="https://raw.githubusercontent.com/danielhanbitlee/Springboard/master/capstone_project/data/2016.txt">Opioid Overdose Mortality Rate 2016 (CDC Wonder)</a></li>
+        <li><a href="https://raw.githubusercontent.com/danielhanbitlee/Springboard/master/capstone_project/data/overall_death_rate_2016.txt">Overall Death Rate (All Causes) 2016 (CDC Wonder)</a></li>
+        <li><a href="https://raw.githubusercontent.com/danielhanbitlee/Springboard/master/capstone_project/data/county_race_2016.txt">County Level Race Data 2016(CDC Wonder)</a></li>
+        <li><a href="https://raw.githubusercontent.com/danielhanbitlee/Springboard/master/capstone_project/data/county_age_2016.txt">County Level Age Data 2016 (CDC Wonder)</a></li>
+        <li><a href="https://raw.githubusercontent.com/danielhanbitlee/Springboard/master/capstone_project/data/Opioid%20Overdose%20Deaths.txt">Opioid Overdose Mortality Rates 1999 - 2016 (CDC Wonder)</a></li>
+    </ol>
+</div>
 </div>
 </div>
 </div></div></section></section><section><section>
@@ -12861,7 +12861,7 @@ img {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[118]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">population_distribution</span>
@@ -12877,7 +12877,7 @@ img {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[98]:</div>
+<div class="prompt output_prompt">Out[118]:</div>
 
 
 
@@ -13067,7 +13067,7 @@ img {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[120]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">two_sample_t_test_p_values</span>
@@ -13083,7 +13083,7 @@ img {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[100]:</div>
+<div class="prompt output_prompt">Out[120]:</div>
 
 
 
